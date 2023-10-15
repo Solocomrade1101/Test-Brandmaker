@@ -1,0 +1,49 @@
+@import "navigation";
+@import "nullstyle";
+@import "sidebar";
+@import "modal";
+@import "slider";
+
+@import "main";
+
+@font-face {
+  font-family: "AvenirB";
+  src: url('./assets/fonts/AvenirNextCyr-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url('./assets/fonts/AvenirNextCyr-Regular.ttf');
+  
+}
+body{
+  font-family: "Avenir";
+  background: #ffffff;
+}
+.wrapper{
+  margin: 0 20px;
+overflow: hidden;
+}
+@media (max-width:930px){
+  .wrapper{
+    margin: 0;
+  }
+}
+.container{
+  
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 32px;
+}
+@media (max-width:930px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+
+  }
+}
+p{
+  color: #414140;
+}

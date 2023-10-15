@@ -1,0 +1,91 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: #494949a0;
+  z-index: 999;
+  opacity: 0;
+  display: flex;
+  transition: all ease .4s;
+  visibility: hidden;
+}
+
+.modal__window {
+  position: relative;
+  background: #fff;
+  width: 370px;
+  padding: 32px 0;
+}
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+
+}
+.modal__container {
+  max-width: 306px;
+  margin: 0 auto;
+
+}
+.modal__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 110%;
+  margin-bottom: 4px;
+}
+.modal__text {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+.modal__form {
+}
+.modal__input {
+  width: 117px;
+  height: 20px;
+  margin-left: 4px;
+  font-size: 16px;
+  
+  
+}
+.modal__input-block{
+  border: 1px solid rgba(65, 65, 64, 0.10);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  background: url('./assets/img/modalIconRussia.svg') no-repeat 15px ;
+  height: 48px;
+  width: 100%;
+  padding-left: 48px;
+  margin-bottom: 8px;
+}
+.modal__button {
+  margin-bottom: 18px;
+  cursor: default;
+}
+.aside__button__text {
+}
+.modal__policy {
+  font-size: 11px;
+  opacity: .5;
+  line-height: 110%;
+}
+.modal__policy__text {
+}
+.modal__policy__link {
+  color: #414140;
+  text-decoration: underline;
+}
+@media (max-width:460px){
+  .modal__window{
+    width: 335px;
+  }
+  .modal__container{
+    max-width: 287px;
+  }
+  .modal__title{
+    max-width: 270px;
+  }
+}
